@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I <3 KEILY</title>
+    <style>
+        body {
+            background-image: url('romantic-background.jpg'); /* Set the path to your image */
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            font-family: 'Segoe Script', cursive;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border: 2px solid transparent;
+            border-image: linear-gradient(45deg, #ff0066, #ff3399);
+            border-image-slice: 1;
+            animation: pulse 2s infinite;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #ff3399; /* Romantic pink color */
+            margin: 0;
+        }
+
+        .hearts {
+            font-size: 60px;
+            color: #ff3399; /* Romantic pink color */
+        }
+
+        .message {
+            font-size: 24px;
+            color: #ff0066; /* Deep pink color for the message */
+            margin-top: 20px;
+        }
+
+        @keyframes pulse {
+            0% {
+                border-image-source: linear-gradient(45deg, #ff0066, #ff3399);
+            }
+            50% {
+                border-image-source: linear-gradient(45deg, #ff3399, #ff0066);
+            }
+            100% {
+                border-image-source: linear-gradient(45deg, #ff0066, #ff3399);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I <span class="hearts">&hearts;</span> KEILY</h1>
+        <p class="message">
+            I love you endlessly.
+        </p>
+    </div>
+</body>
+</html>
+
+
