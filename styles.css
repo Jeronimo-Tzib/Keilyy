@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.heart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.heart::before,
+.heart::after {
+    content: '\2764'; /* Unicode heart symbol */
+    font-size: 90px;
+    color: #ff65a3; /* Neon pink color */
+    position: absolute;
+    top: 0;
+}
+
+.heart::after {
+    transform: rotate(-90deg);
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
